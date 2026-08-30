@@ -1,6 +1,7 @@
 # screensh
 
-Native macOS screenshot utility written in Swift and SwiftUI for fast region capture to the clipboard.
+A fast and simple screenshot tool with instant clipboard copying and image uploading.
+
 ---
 
 >[!IMPORTANT]
