@@ -1,0 +1,21 @@
+#!/bin/bash
+
+LOCK_FILE="/tmp/screensh.lock"
+BINARY_PATH="$(dirname "$0")/.build/debug/screensh"
+
+if [ -f "$LOCK_FILE" ]; then
+    LOCKED_PID=$(cat "$LOCK_FILE" 2>/dev/null)
+    
+    if [ -n "$LOCKED_PID" ] && kill -0 "$LOCKED_PID" 2>/dev/null; then
+        echo "screensh is already running (PID: $LOCKED_PID)"
+        exit 0
+    else
+        rm -f "$LOCK_FILE"
+    fi
+fi
+
+echo $$ > "$LOCK_FILE"
+
+"$BINARY_PATH" 2>&1 | tee /tmp/screensh.log
+
+rm -f "$LOCK_FILE"

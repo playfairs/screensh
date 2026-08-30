@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:screensh}",
+            "name": "Debug screensh",
+            "target": "screensh",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug screensh"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:screensh}",
+            "name": "Release screensh",
+            "target": "screensh",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release screensh"
+        }
+    ]
+}
