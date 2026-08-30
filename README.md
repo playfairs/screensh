@@ -8,12 +8,10 @@ the best way to go about making this, I intend to make it similar to Flameshot o
 
 ### What it does
 - Launches as a lightweight macOS menu-bar app.
-- Registers a configurable global keyboard shortcut.
 - Shows a fullscreen dimmed overlay on the active display.
 - Lets the user drag a rectangle to select a region.
 - Captures the exact selected area at display resolution.
 - Encodes the result as PNG and copies it directly to the macOS pasteboard.
-- Cancels cleanly with Escape and keeps the hotkey active for later captures.
 
 ### Requirements
 - macOS 13+
