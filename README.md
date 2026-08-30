@@ -1,6 +1,6 @@
 # screensh
-
 A fast and simple screenshot tool with instant clipboard copying and image uploading.
+
 ---
 >[!IMPORTANT]
 > For now, the app is SUPER minimal and only copies region capture, I'm trying to figure out
